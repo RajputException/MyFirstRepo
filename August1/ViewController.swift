@@ -10,16 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var userNametf: UITextField!
+      @IBOutlet weak var passwordtf: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+      creatingUI()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func creatingUI()
+    {
+        userNametf.layer.borderWidth = 1.5
+        passwordtf.layer.borderWidth = 1.5
+        loginButton.layer.cornerRadius = 20
+        loginButton.layer.borderWidth = 1.5
+        signUpButton.layer.borderWidth = 1.5
+        signUpButton.layer.cornerRadius = 20
+        
     }
-
-
+  
 }
 
